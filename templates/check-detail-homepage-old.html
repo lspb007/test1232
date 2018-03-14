@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+{% load staticfiles %}
+<head>
+<meta charset="UTF-8">
+<meta name="renderer" content="webkit">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" >
+<title>{% block title %}机构首页{% endblock %}</title>
+<link rel="stylesheet" type="text/css" href="{% static 'css/reset.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'css/animate.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'js/plugins/queryCity/css/cityLayout.css' %}">
+{% block custom_css %}{% endblock %}
+
+<script src="{% static 'js/jquery.min.js' %}" type="text/javascript"></script>
+<script src="{% static 'js/jquery-migrate-1.2.1.min.js' %}" type="text/javascript"></script>
+{% block custom_js %}{% endblock %}
+</head>
+<body>
+<div>
+<table border="1">
+<tr>
+<th>服务器名称</th>
+<th>IP</th>
+<th>服务器Id</th>
+<th width="20">CPU占用率(%) </th>
+<th width="10">内存使用率(%)</th>
+<th width="20">硬盘使用率(%)</th>
+<th>中间件</th>
+<th>数据库</th>
+<th >故障描述 </th>
+</tr>
+<form class="rightform" id="jsStayForm" method="post" action="/add_ask/">
+{% for course in all_resource %}
+<tr >
+<td>{{course.resource_name  }}1</td>
+<td>{{ course.resource_IP }}</td>
+<td>{{ course.id }}</td>
+
+<input type="hidden" name="dev_id" id="dev_id" value={{ course.id }}>
+<td ><input type="text" name="ckeckCPU" id="ckeckCPU" placeholder="1-100" maxlength="30" size="5" value=50></td>
+<td><input type="text" name="checkMEM" id="checkMEM" placeholder="1-100" maxlength="30" size="5" value=50></td>
+<td><input type="text" name="checkDISK" id="checkDISK" placeholder="1-100" maxlength="30" size="5" value=50></td>
+<td><input type="text" name="checkmiddleware" id="checkmiddleware" placeholder="正常" maxlength="30" size="5" value=True></td>
+<td><input type="text" name="checkdatabase" id="checkdatabase" placeholder="正常" maxlength="30" size="5" value=True></td>
+<td><input type="text" name="details" id="details" placeholder="无" maxlength="30" size="50" value="无"></td>
+</tr>
+{% endfor %}
+</table>
+
+</div>
+
+
+<div class="right companyright">
+<div class="head">定位2</div>
+
+<div>
+<a>巡检人</a>
+<input type="text" name="user_name" id="companyName" placeholder="user_name" maxlength="25" />
+</div>
+<div>
+<input  type="hidden" name="system_name" id="companyMobile" placeholder="system_name" value="{{ system_id }}"/>
+</div>
+<div>
+<a>是否正常</a>
+<input type="text" name="sysisnormal" id="companyAddress" placeholder="sysisnormal" maxlength="50" />
+</div>
+<div>
+<a>故障描述</a>
+<input type="text" name="details" id="companydetails" placeholder="details" maxlength="50" />
+</div>
+<p class="error company-tips" id="jsCompanyTips"></p>
+<input class="btn" type="submit" id="jsStayBtn" value="提交" />
+{% csrf_token %}
+</form>
+</div>
+
+</body>
+</html>

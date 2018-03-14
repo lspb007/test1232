@@ -1,0 +1,114 @@
+﻿{% extends 'base.html' %}
+{% load staticfiles %}
+{% block title %}服务器状态{% endblock %}
+{% block custom_css %}
+
+{% endblock %}
+
+
+{% block menu_active %}
+<li>
+<a  href="/"><i class="fa fa-dashboard "></i>首页</a>
+</li>
+<li>
+<a href="/check/"><i class="fa fa-eyedropper "></i>巡检</a>
+</li>
+<li>
+<a href="#"><i class="fa fa-sitemap "></i>业务系统信息 <span class="fa arrow"></span></a>
+ <ul class="nav nav-second-level">
+    <li>
+        <a href="#"><i class="fa fa-bicycle "></i>内网系统</a>
+    </li>
+     <li>
+        <a href="#"><i class="fa fa-flask "></i>门户系统</a>
+    </li>
+    <li>
+        <a href="#"><i class="fa fa-flask "></i>LDAP系统</a>
+
+    </li>
+     <li>
+        <a href="#"><i class="fa fa-flask "></i>统一认证平台</a>
+
+    </li>
+</ul>
+</li>
+<li>
+<a href="/checksysinfo/"><i class="fa fa-eyedropper "></i>最新系统状态</a>
+</li>
+<li>
+<a class="active-menu" href="/checkdevinfo/"><i class="fa fa-eyedropper "></i>最新服务器状态</a>
+</li>
+{% endblock %}
+
+
+
+{% block page-wrapper %}
+      <div id="page-inner">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1 class="page-head-line">最新服务器状态</h1>
+                        <h1 class="page-subhead-line">最近一次巡检的状态 </h1>
+
+                    </div>
+                </div>
+                <!-- /. ROW  -->
+                <div class="row">
+
+                </div>
+                <!-- /. ROW  -->
+                 <div class="row">
+                   <div class="col-md-12">
+                       <div class="panel panel-primary">
+      <!-- Default panel contents -->
+      <div class="panel-heading">服务器列表</div>
+
+      <!-- Table -->
+      <table class="table">
+        <thead>
+          <tr>
+            <th>#</th>
+              <th>所属业务系统</th>
+              <th>服务器名称</th>
+              <th>IP</th>
+              <th>巡检时间</th>
+            <th>巡检人</th>
+            <th>CPU</th>
+            <th>内存</th>
+            <th>硬盘</th>
+              <th>服务和进程状态</th>
+
+            <th>备注</th>
+          </tr>
+        </thead>
+        <tbody>
+            {% for row in dev_check_new %}
+                      <tr class="list-group-item-success">
+                      <td>{{  forloop.counter }}</td>
+                      <th>{{ row.name }}</th>
+                      <td>{{ row.dev_id }}</td>
+                      <td>{{ row.dev_id.resource_IP}}</td>
+                      <td>{{ row.add_time }}</td>
+                      <td>{{ row.user_name }}</td>
+                      <td>{{ row.ckeckCPU }}</td>
+                      <td>{{ row.checkMEM }}</td>
+                      <td>{{ row.checkDISK }}</td>
+                      <td>{{ row.get_service_display }}</td>
+                      <td>{{ row.details }}</td>
+
+          </tr>
+            {% endfor %}
+
+
+        </tbody>
+      </table>
+    </div>
+                   </div>
+                     </div>
+            </div>
+{% endblock %}
+
+{% block custom_js %}
+
+{% endblock %}
+
+

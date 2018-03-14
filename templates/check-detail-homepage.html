@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load staticfiles %}
+<head>
+       <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>巡检-{{ check_system }}</title>
+     <link rel="stylesheet" type="text/css" href="{% static 'css/reset.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/animate.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'js/plugins/queryCity/css/cityLayout.css' %}">
+    <!-- BOOTSTRAP STYLES-->
+    <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet" />
+    <!-- FONTAWESOME STYLES-->
+    <link href="{% static 'css/font-awesome.css' %} " rel="stylesheet" />
+    <!--CUSTOM BASIC STYLES-->
+    <link href="{% static 'css/basic.css' %}" rel="stylesheet" />
+    <!--CUSTOM MAIN STYLES-->
+    <link href="{% static 'css/custom.css' %}" rel="stylesheet" />
+
+
+    <!-- GOOGLE FONTS-->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+</head>
+<body>
+<div id="page-wrapper">
+            <div id="page-inner">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1 class="page-head-line">{{ check_system }}</h1>
+                        <h1 class="page-subhead-line">This is dummy text , you can replace it with your original text. </h1>
+
+                    </div>
+                </div>
+                <!-- /. ROW  -->
+
+
+                <!-- /. ROW  -->
+            <div class="row">
+
+                <div class="col-md-12">
+                     <!--    Context Classes  -->
+                    <div class="panel panel-default">
+
+                        <div class="panel-heading">
+                            服务器数量: {{ res_count }}
+                        </div>
+
+                        <div class="panel-body">
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>服务器名称</th>
+                                            <th>IP</th>
+
+                                            <th width="20">CPU占用率(%) </th>
+                                            <th width="10">内存使用率(%)</th>
+                                            <th width="20">硬盘使用率(%)</th>
+                                            <th>服务和进程状态</th>
+                                            <th >故障描述 </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <form class="rightform" id="jsStayForm" method="post" action="/add_ask/">
+                                        {% for course in all_resource %}
+                                        <tr >
+                                        <td>{{course.resource_name  }}</td>
+                                        <td>{{ course.resource_IP }}</td>
+{#                                        <td type="hidden">{{ course.id }}</td>#}
+
+                                        <input type="hidden" name="dev_id" id="dev_id" value={{ course.id }}>
+                                        <td ><input type="text" name="ckeckCPU" id="ckeckCPU" placeholder="1-100" maxlength="30" size="5" value=50></td>
+                                        <td><input type="text" name="checkMEM" id="checkMEM" placeholder="1-100" maxlength="30" size="5" value=50></td>
+                                        <td><input type="text" name="checkDISK" id="checkDISK" placeholder="1-100" maxlength="30" size="5" value=50></td>
+{#                                        <td><input type="text" name="service" id="service" placeholder="服务和进程状态" maxlength="30" size="5" value="1"></td>#}
+                                            <td>
+                                            <select  name="service" id="service" >
+                                                <option value="1">正常</option>
+                                                <option value="2">异常</option>
+                                            </select>
+                                            </td>
+                                        <td><input type="text" name="details" id="details" placeholder="无" maxlength="30" size="50" value="无"></td>
+                                            {% endfor %}
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <!--  end  Context Classes  -->
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-12">
+               <div class="panel panel-info">
+                        <div class="panel-heading">
+
+                        </div>
+                        <div class="panel-body">
+
+                                        <div class="form-group">
+                                            <div>
+                                            <input  type="hidden" name="system_name" id="companyMobile" placeholder="system_name" value="{{ system_id }}"/>
+                                            </div>
+{#                                            <label>巡检人</label>#}
+                                            <input class="form-control" type="hidden" name="user_name" id="companyName" placeholder="user_name" value="{{ request.user.nick_name }}">
+{#                                            <p class="help-block">姓名</p>#}
+                                        </div>
+                                 <div class="form-group">
+                                            <label>业务系统是否正常</label>
+{#                                            <input class="form-control" type="text" name="sysisnormal" id="companyAddress" placeholder="sysisnormal">#}
+                                              <select class="form-control" name="sysisnormal">
+                                                        <option value="1">正常</option>
+                                                        <option value="2">异常</option>
+                                                    </select>
+                                     <p class="help-block">应用访问是否正常</p>
+                                        </div>
+                                            <div class="form-group">
+                                            <label>故障描述</label>
+                                            <textarea class="form-control" rows="3"  name="details" id="companydetails" placeholder="details"></textarea>
+                                        </div>
+                                <a>故障描述</a>
+
+
+                                        <button type="submit" class="btn btn-info">提交</button>
+{% csrf_token %}
+                                    </form>
+                            </div>
+                        </div>
+                            </div>
+            </div>
+                <!-- /. ROW  -->
+
+            </div>
+            <!-- /. PAGE INNER  -->
+        </div>
+
+
+    <!-- /. FOOTER  -->
+    <!-- SCRIPTS -AT THE BOTOM TO REDUCE THE LOAD TIME-->
+    <!-- JQUERY SCRIPTS -->
+    <script src="assets/js/jquery-1.10.2.js"></script>
+    <!-- BOOTSTRAP SCRIPTS -->
+    <script src="assets/js/bootstrap.js"></script>
+     <!-- METISMENU SCRIPTS -->
+    <script src="assets/js/jquery.metisMenu.js"></script>
+    <!-- CUSTOM SCRIPTS -->
+    <script src="assets/js/custom.js"></script>
+
+</body>
+</html>
