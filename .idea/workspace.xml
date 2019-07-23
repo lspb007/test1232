@@ -2,42 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d84e1e1a-b824-4af6-88ff-218d9fdfddd4" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/templates/assets/css/style.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/templates/assets/img/banner.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/templates/assets/img/default.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/templates/assets/img/lock.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/templates/assets/img/mail.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/templates/assets/img/person.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/templates/assets/img/phone.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/templates/assets/js/deco-common.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/templates/assets/js/deco-user.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/templates/assets/js/jquery.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/templates/assets/js/jquery.min.js" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/check/adminx.py" afterPath="$PROJECT_DIR$/check/adminx.py" />
-      <change beforePath="$PROJECT_DIR$/check/migrations/0001_initial.py" afterPath="$PROJECT_DIR$/check/migrations/0001_initial.py" />
-      <change beforePath="$PROJECT_DIR$/check/migrations/0002_auto_20180311_1050.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/check/migrations/0003_auto_20180311_1301.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/check/migrations/0004_auto_20180311_2243.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/check/models.py" afterPath="$PROJECT_DIR$/check/models.py" />
-      <change beforePath="$PROJECT_DIR$/check/views.py" afterPath="$PROJECT_DIR$/check/views.py" />
-      <change beforePath="$PROJECT_DIR$/templates/assets/css/bootstrap.css" afterPath="$PROJECT_DIR$/templates/assets/css/bootstrap.css" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html" afterPath="$PROJECT_DIR$/templates/base.html" />
-      <change beforePath="$PROJECT_DIR$/templates/check-detail-homepage.html" afterPath="$PROJECT_DIR$/templates/check-detail-homepage.html" />
-      <change beforePath="$PROJECT_DIR$/templates/check.html" afterPath="$PROJECT_DIR$/templates/check.html" />
-      <change beforePath="$PROJECT_DIR$/templates/checkdevinfo.html" afterPath="$PROJECT_DIR$/templates/checkdevinfo.html" />
-      <change beforePath="$PROJECT_DIR$/templates/checksysinfo.html" afterPath="$PROJECT_DIR$/templates/checksysinfo.html" />
-      <change beforePath="$PROJECT_DIR$/templates/index.html" afterPath="$PROJECT_DIR$/templates/index.html" />
-      <change beforePath="$PROJECT_DIR$/templates/login.html" afterPath="$PROJECT_DIR$/templates/login.html" />
-      <change beforePath="$PROJECT_DIR$/test123/settings.py" afterPath="$PROJECT_DIR$/test123/settings.py" />
-      <change beforePath="$PROJECT_DIR$/test123/urls.py" afterPath="$PROJECT_DIR$/test123/urls.py" />
-      <change beforePath="$PROJECT_DIR$/users/admin.py" afterPath="$PROJECT_DIR$/users/admin.py" />
-      <change beforePath="$PROJECT_DIR$/users/migrations/0001_initial.py" afterPath="$PROJECT_DIR$/users/migrations/0001_initial.py" />
-      <change beforePath="$PROJECT_DIR$/users/models.py" afterPath="$PROJECT_DIR$/users/models.py" />
-      <change beforePath="$PROJECT_DIR$/users/views.py" afterPath="$PROJECT_DIR$/users/views.py" />
-      <change beforePath="$PROJECT_DIR$/users/xadmin.py" afterPath="$PROJECT_DIR$/users/xadmin.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -120,7 +85,7 @@
         <entry file="file://$PROJECT_DIR$/test123/settings.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="465">
-              <caret line="135" column="59" lean-forward="true" selection-start-line="135" selection-start-column="59" selection-end-line="135" selection-end-column="59" />
+              <caret line="135" column="59" lean-forward="false" selection-start-line="135" selection-start-column="59" selection-end-line="135" selection-end-column="59" />
               <folding />
             </state>
           </provider>
@@ -751,6 +716,14 @@
       <option name="presentableId" value="Default" />
       <updated>1520406189339</updated>
     </task>
+    <task id="LOCAL-00001" summary="20190723commit">
+      <created>1563854592475</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1563854592475</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -801,7 +774,8 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <option name="LAST_COMMIT_MESSAGE" value="" />
+    <MESSAGE value="20190723commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="20190723commit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1207,7 +1181,7 @@
     <entry file="file://$PROJECT_DIR$/test123/settings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="465">
-          <caret line="135" column="59" lean-forward="true" selection-start-line="135" selection-start-column="59" selection-end-line="135" selection-end-column="59" />
+          <caret line="135" column="59" lean-forward="false" selection-start-line="135" selection-start-column="59" selection-end-line="135" selection-end-column="59" />
           <folding />
         </state>
       </provider>

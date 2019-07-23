@@ -1,0 +1,191 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block title %}系统状态{% endblock %}
+{% block custom_css %}
+
+{% endblock %}
+
+
+{% block menu_active %}
+<li>
+    <a href="/"><i class="fa fa-dashboard "></i>首页</a>
+</li>
+<li>
+    <a class="active-menu" href="/detail_src/"><i class="fa fa-flask "></i>巡检安全设备</a>
+</li>
+   <li>
+        <a href="/detail_net/"><i class="fa fa-desktop "></i>巡检网络设备</a>
+    </li>
+
+<li>
+<a href="/checkSec/"><i class="fa fa-eyedropper "></i>最新安全设备状态</a>
+</li>
+<li>
+<a href="/checkNet/"><i class="fa fa-eyedropper "></i>最新网络设备状态</a>
+</li>
+<li>
+
+
+{% endblock %}
+
+{% block page-wrapper %}
+            <div id="page-inner">
+                <div class="row">
+                            <div class="col-md-12">
+                        <h1 class="page-head-line">安全设备巡检</h1>
+                        <strong>巡检方法：</strong><h1 class="page-subhead-line" ><pre >通过远程跳板机mstsc：172.19.18.20，       administrator/btv.2013登录
+到服务器打开IE浏览器收藏夹所对应的设备列表</pre></h1>
+
+                    </div>
+                </div>
+                <!-- /. ROW  -->
+
+
+                <!-- /. ROW  -->
+            <div class="row">
+
+                <div class="col-md-12">
+                     <!--    Context Classes  -->
+                    <div class="panel panel-default">
+
+                        <div class="panel-heading">
+                            服务器数量: {{ res_count }}
+                        </div>
+
+                        <div class="panel-body">
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>安全设备名称</th>
+                                            <th>IP</th>
+                                            <th>品牌</th>
+                                            <th width="20">CPU占用率(%) </th>
+                                            <th width="10">内存使用率(%)</th>
+                                            <th width="20">会话连接数</th>
+                                            <th>设备状态</th>
+                                            <th >备注 </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <form class="rightform" id="jsStayForm" method="post" action="/add_src/">
+                                        {% for course in all_resource %}
+                                        <tr >
+                                        <td>{{course.SecurityDevice_name  }}</td>
+                                        <td>{{ course.SecurityDevice_IP }}</td>
+                                        <td>{{ course.SecurityDevice_brand }}</td>
+{#                                        <td type="hidden">{{ course.id }}</td>#}
+
+                                            <input type="hidden" name="dev_id" id="dev_id" value={{ course.id }}>
+                                            <td ><input type="text" name="ckeckCPU" id="ckeckCPU" placeholder="1-100" maxlength="30" size="5" value="50"></td>
+                                            <td><input type="text" name="checkMEM" id="checkMEM" placeholder="1-100" maxlength="30" size="5" value="50"></td>
+                                            <td><input type="text" name="sessionNum" id="sessionNum" placeholder="1-100" maxlength="30" size="5" value="50"></td>
+
+{#                                        <td><input type="text" name="service" id="service" placeholder="服务和进程状态" maxlength="30" size="5" value="1"></td>#}
+                                            <td>
+                                            <select  name="service" id="service" >
+                                                <option value="1">正常</option>
+                                                <option value="2">异常</option>
+                                            </select>
+                                            </td>
+                                        <td><input type="text" name="details" id="details" placeholder="无" maxlength="30" size="50" value={{ auto_check_info.ERROR }}></td>
+                                            {% endfor %}
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <!--  end  Context Classes  -->
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-12">
+               <div class="panel panel-info">
+                        <div class="panel-heading">
+
+                        </div>
+                        <div class="panel-body">
+
+                                        <div class="form-group">
+                                            <div>
+                                            <input  type="hidden" name="system_name" id="companyMobile" placeholder="system_name" value="{{ system_id }}"/>
+                                            </div>
+{#                                            <label>巡检人</label>#}
+                                            <input class="form-control" type="hidden" name="user_name" id="companyName" placeholder="user_name" value="{{ request.user.nick_name }}">
+{#                                            <p class="help-block">姓名</p>#}
+                                        </div>
+{#                                 <div class="form-group">#}
+{#                                            <label>业务系统是否正常</label>#}
+{#                                            <input class="form-control" type="text" name="sysisnormal" id="companyAddress" placeholder="sysisnormal">#}
+{#                                              <select class="form-control" name="sysisnormal">#}
+{#                                                        <option value="1">正常</option>#}
+{#                                                        <option value="2">异常</option>#}
+{#                                                    </select>#}
+{#                                     <p class="help-block">应用访问是否正常</p>#}
+{#                                        </div>#}
+{#                                            <div class="form-group">#}
+{#                                            <label>故障描述</label>#}
+{#                                            <textarea class="form-control" rows="3"  name="details" id="companydetails" placeholder="details"></textarea>#}
+{#                                        </div>#}
+{#                                <a>故障描述</a>#}
+
+
+                                        <button type="submit" class="btn btn-info">提交</button>
+{% csrf_token %}
+                                    </form>
+                            </div>
+                        <div class="panel-body">
+
+
+
+
+
+
+
+                            </div>
+                        </div>
+                            </div>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                           <div class="panel panel-info" >
+                        <div class="panel-heading">
+                            自动巡检结果
+                        </div>
+                        <div class="panel-body">
+
+{#                                {{ auto_check_info_list}}#}
+                                {% if ssh_error == '' %}
+                                <table border="1px" id="tab">
+                                    <tr height="20px">
+                                     <td>IP地址</td>
+                                     <td>CPU使用率（%）</td>
+                                    <td>内存使用率（%）</td>
+                                        <td>系统硬盘使用率（%）</td>
+
+                                    </tr>
+                                    </table><br>
+                                {% else %}
+                                    <span>{{ ssh_error }}</span>
+                                {% endif %}
+
+
+                            </div>
+                        </div>
+                            </div>
+            </div>
+                <!-- /. ROW  -->
+
+
+
+
+{% endblock %}
+
+{% block custom_js %}
+    <script>
+    tag = document.getElementsByName('status')
+    for(var i in tag){
+        if(tag[i].innerText=='故障'){
+            tag[i].className='label label-danger'
+        }
+    }
+    </script>
+{% endblock %}
+
+

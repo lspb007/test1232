@@ -1,0 +1,142 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block title %}个人中心{% endblock %}
+
+
+{% block menu_active %}
+<li>
+<a class="active-menu" href="/"><i class="fa fa-dashboard "></i>首页</a>
+</li>
+<li>
+<a href="/check/"><i class="fa fa-eyedropper "></i>巡检</a>
+</li>
+</li>
+<li>
+<a href="/checksysinfo/"><i class="fa fa-eyedropper "></i>最新系统状态</a>
+</li>
+<li>
+<a href="/checkdevinfo/"><i class="fa fa-eyedropper "></i>最新服务器状态</a>
+</li>
+<li>
+<a href="#"><i class="fa fa-sitemap "></i>业务系统信息 <span class="fa arrow"></span></a>
+ <ul class="nav nav-second-level">
+     {% for systems in all_system %}
+         <li>
+        <a href="#"><i class="fa fa-flask "></i>{{ systems.name }}</a>
+    </li>
+     {% endfor %}
+
+</ul>
+
+{% endblock %}
+
+{% block page-wrapper %}
+<div id="page-inner">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1 class="page-head-line">个人中心</h1>
+                        <h1 class="page-subhead-line">更换头像和密码</h1>
+
+                    </div>
+                </div>
+                <!-- /. ROW  -->
+                <div class="row">
+                               <div class="col-md-6">
+                       <div class="panel panel-default">
+                        <div class="panel-heading">
+                          更换头像
+                        </div>
+                        <div class="panel-body">
+
+
+                    <div style="height: 400px" class="form-group" >
+                        <label class="control-label col-lg-4">Pre Defined Image</label>
+                        <div class="">
+{#                            <iframe id='frameFile' name='frameFile' style='display: none;'></iframe>#}
+                             <form class="clearfix" id="jsAvatarForm" enctype="multipart/form-data" autocomplete="off" method="post" action="{% url 'users:image_upload' %}" target='frameFile'>
+                            <div class="fileupload fileupload-new" data-provides="fileupload">
+                                <div class="fileupload-new thumbnail" style="width: 200px; height: 150px;"><img src="{% static 'img/demoUpload.jpg'%}" alt="" /></div>
+                                <div class="fileupload-preview fileupload-exists thumbnail" style="max-width: 200px; max-height: 150px; line-height: 20px;"></div>
+                                <div>
+                                    <span class="btn btn-file btn-primary"><span class="fileupload-new">选择本地头像</span><span class="fileupload-exists">更换</span><input type="file" name="image" class="js-imp-up"></span>
+                                    <a href="#" class="btn btn-danger fileupload-exists" data-dismiss="fileupload">删除</a>
+                                </div>
+                            </div>
+                                           <button type="submit" class="btn btn-info">更换头像</button>
+                                         {% csrf_token %}
+                                 </form>
+                        </div>
+                    </div>
+                    <div class="alert alert-warning"><strong>Notice!</strong> Image preview only works in IE10+, FF3.6+, Chrome6.0+ and Opera11.1+. In older browsers and Safari, the filename is shown instead.</div>
+                    </div>
+                           </div>
+                                                  <div class="panel panel-default">
+                        <div class="panel-heading">
+                          修改密码
+                        </div>
+                        <div class="panel-body">
+    <div class="resetpassword" id="reset_password_tips" style="display:none;">
+        <h1>修改密码成功,请重新登录</h1>
+        <img class="fl" src="/static/images/check2.png">
+        <p class="successword">已经成功修改密码，请重新登录</p>
+    </div>
+
+                    <div style="height: 400px" class="form-group form-control" >
+  <div class="resetpwdbox dialogbox" id="jsResetDialog">
+                        <h1>修改密码</h1>
+        <div class="close jsCloseDialog"></div>
+        <div class="cont">
+            <form id="jsResetPwdForm" autocomplete="off">
+                <div class="box">
+                    <label class="word2" >新&nbsp;&nbsp;密&nbsp;&nbsp;码</label>
+                    <input class="form-control" type="password" id="pwd" name="password1" placeholder="6-20位非中文字符"/>
+                </div>
+                <div class="box">
+                    <label class="word2" >确定密码</label>
+                    <input class="form-control" type="password" id="repwd" name="password2" placeholder="6-20位非中文字符"/>
+                </div>
+                <div class="error btns alert-danger alert-dismissable" id="jsResetPwdTips"></div>
+                <div  class="col-md-6 col-sm-6 col-xs-12" class="button">
+                <br>
+                    <br>
+                    <input class="btn btn-info"  id="jsResetPwdBtn" type="button" value="提交" />
+                </div>
+                <input type='hidden' name='csrfmiddlewaretoken' value='DaP7IUKm9FA9nELA9YUlYYWpyIDdCiIP' />
+            <input type='hidden' name='csrfmiddlewaretoken' value='799Y6iPeEDNSGvrTu3noBrO4MBLv6enY' />
+                {% csrf_token %}
+            </form>
+        </div>
+       </div>
+                    </div>
+                    <div class="alert alert-warning"><strong>Notice!</strong> Image preview only works in IE10+, FF3.6+, Chrome6.0+ and Opera11.1+. In older browsers and Safari, the filename is shown instead.</div>
+                    </div>
+                           </div>
+                        </div>
+
+                </div>
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+{% endblock %}
+
+
+
+
+
+
+    {% block custom_js %}
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <script src="{% static 'js/deco-user.js' %}"></script>
+    <script src="{% static 'js/deco-common.js' %}"></script>
+
+        {% endblock %}
+

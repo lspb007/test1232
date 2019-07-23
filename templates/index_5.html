@@ -1,0 +1,241 @@
+﻿{% extends 'base.html' %}
+{% load staticfiles %}
+{% block title %}首页{% endblock %}
+
+{% block menu_active %}
+<li>
+    <a class="active-menu" href="/"><i class="fa fa-dashboard "></i>首页</a>
+</li>
+<li>
+    <a href="/detail_src/"><i class="fa fa-flask "></i>巡检安全设备</a>
+</li>
+   <li>
+        <a href="/detail_net/"><i class="fa fa-desktop "></i>巡检网络设备</a>
+    </li>
+
+<li>
+<a href="/checkSec/"><i class="fa fa-eyedropper "></i>最新安全设备状态</a>
+</li>
+<li>
+<a href="/checkNet/"><i class="fa fa-eyedropper "></i>最新网络设备状态</a>
+</li>
+<li>
+{#<a href="#"><i class="fa fa-sitemap "></i>业务系统信息 <span class="fa arrow"></span></a>#}
+{# <ul class="nav nav-second-level">#}
+{#     {% for systems in all_system %}#}
+{#         <li>#}
+{#        <a href="#"><i class="fa fa-flask "></i>{{ systems.name }}</a>#}
+{#    </li>#}
+{#     {% endfor %}#}
+{##}
+{#</ul>#}
+
+{% endblock %}
+
+{% block page-wrapper %}
+            <div id="page-inner">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1 class="page-head-line">首页</h1>
+                        <h1 class="page-subhead-line">办公域基础巡检系统 </h1>
+
+                    </div>
+                </div>
+                <!-- /. ROW  -->
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="main-box mb-red">
+                            <a href="/checksysinfo/">
+                                <i class="fa fa-bolt fa-5x"></i>
+                                <h5>覆盖{{ system_count }}套业务系统</h5>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="main-box mb-dull">
+                            <a href="/checkdevinfo/">
+                                <i class="fa fa-plug fa-5x"></i>
+                                <h5>包含{{ Resource }}个计算节点</h5>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="main-box mb-pink">
+                            <a href="">
+                                <i class="fa fa-dollar fa-5x"></i>
+                                <h5 >{{ admin_count }}名技术专家</h5>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- /. ROW  -->
+
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="row">
+                            <div class="col-md-12">
+
+
+
+                            </div>
+
+                        </div>
+                        <!-- /. ROW  -->
+                        <hr />
+
+                        <div class="panel panel-default">
+
+                            <div id="carousel-example" class="carousel slide" data-ride="carousel" style="border: 5px solid #000;">
+
+                                <div class="carousel-inner">
+                                    <div class="item active">
+
+                                        <img src="{% static 'img/slideshow/1.jpg' %}" alt="" />
+
+                                    </div>
+                                    <div class="item">
+                                        <img src="{% static 'img/slideshow/2.jpg'%}" alt="" />
+
+                                    </div>
+                                    <div class="item">
+                                        <img src="{% static 'img/slideshow/3.jpg'%}" alt="" />
+
+                                    </div>
+                                </div>
+                                <!--INDICATORS-->
+                                <ol class="carousel-indicators">
+                                    <li data-target="#carousel-example" data-slide-to="0" class="active"></li>
+                                    <li data-target="#carousel-example" data-slide-to="1"></li>
+                                    <li data-target="#carousel-example" data-slide-to="2"></li>
+                                </ol>
+                                <!--PREVIUS-NEXT BUTTONS-->
+                                <a class="left carousel-control" href="#carousel-example" data-slide="prev">
+                                    <span class="glyphicon glyphicon-chevron-left"></span>
+                                </a>
+                                <a class="right carousel-control" href="#carousel-example" data-slide="next">
+                                    <span class="glyphicon glyphicon-chevron-right"></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- /.REVIEWS &  SLIDESHOW  -->
+{#                    <div class="col-md-4">#}
+{##}
+{#                        <div class="panel panel-default">#}
+{#                            <div class="panel-heading">#}
+{#                                聊天记录#}
+{#                            </div>#}
+{#                            <div class="panel-body" style="padding: 0px;">#}
+{#                                <div class="chat-widget-main">#}
+{##}
+{##}
+{#                                    <div class="chat-widget-left">#}
+{#                                        已经巡检完毕.#}
+{#                                    </div>#}
+{#                                    <div class="chat-widget-name-left">#}
+{#                                        <h4>管理员1</h4>#}
+{#                                    </div>#}
+{#                                    <div class="chat-widget-right">#}
+{#                                        好的#}
+{#                                    </div>#}
+{#                                    <div class="chat-widget-name-right">#}
+{#                                        <h4>管理员2 </h4>#}
+{#                                    </div>#}
+{#                                    <div class="chat-widget-left">#}
+{#                                        需要重启XXX服务.#}
+{#                                    </div>#}
+{#                                    <div class="chat-widget-name-left">#}
+{#                                        <h4>管理员1</h4>#}
+{#                                    </div>#}
+{#                                    <div class="chat-widget-right">#}
+{#                                        已重启#}
+{#                                    </div>#}
+{#                                    <div class="chat-widget-name-right">#}
+{#                                        <h4>管理员2</h4>#}
+{#                                    </div>#}
+{#                                </div>#}
+{#                            </div>#}
+{#                            <div class="panel-footer">#}
+{#                                <div class="input-group">#}
+{#                                    <input type="text" class="form-control" placeholder="Enter Message" />#}
+{#                                    <span class="input-group-btn">#}
+{#                                        <button class="btn btn-success" type="button">SEND</button>#}
+{#                                    </span>#}
+{#                                </div>#}
+{#                            </div>#}
+{#                        </div>#}
+{##}
+{##}
+{#                    </div>#}
+                    <!--/.Chat Panel End-->
+                </div>
+                <!-- /. ROW  -->
+
+
+                <!--/.Row-->
+                <hr />
+{#                <div class="row">#}
+{##}
+{#                    <div class="col-md-8">#}
+{##}
+{#                        <div class="table-responsive">#}
+{#                            <table class="table table-striped table-bordered table-hover">#}
+{#                                <thead>#}
+{#                                    <tr>#}
+{#                                        <th>#</th>#}
+{#                                        <th>业务名称</th>#}
+{#                                        <th>最后巡检时间</th>#}
+{#                                        <th>业务状态</th>#}
+{#                                        <th>详情</th>#}
+{#                                    </tr>#}
+{#                                </thead>#}
+{#                                <tbody>#}
+{#                                    <tr>#}
+{#                                        <td>1</td>#}
+{#                                        <td><span class="label label-success">内网系统</span></td>#}
+{#                                        <td>2019年3月3日19:30</td>#}
+{#                                        <td>正常</td>#}
+{#                                        <td><span class="label label-info">详情</span></td>#}
+{#                                    </tr>#}
+{#                                    <tr>#}
+{#                                        <td>2</td>#}
+{#                                        <td><span class="label label-success">门户系统</span></td>#}
+{#                                        <td>2019年3月3日19:30</td>#}
+{#                                        <td>正常</td>#}
+{#                                        <td><span class="label label-info">详情</span></td>#}
+{#                                    </tr>#}
+{#                                    <tr>#}
+{#                                        <td>3</td>#}
+{#                                        <td><span class="label label-success">LDAP系统</span></td>#}
+{#                                        <td>2019年3月3日19:30</td>#}
+{#                                        <td><span class="label label-danger">异常</span> </td>#}
+{#                                        <td><span class="label label-info">详情</span></td>#}
+{#                                    </tr>#}
+{#                                    <tr>#}
+{#                                        <td>4</td>#}
+{#                                        <td><span class="label label-success">统一认证平台</span></td>#}
+{#                                        <td>2019年3月3日19:30</td>#}
+{#                                        <td>正常</td>#}
+{#                                        <td><span class="label label-info">详情</span></td>#}
+{#                                    </tr>#}
+{##}
+{##}
+{#                                </tbody>#}
+{#                            </table>#}
+{#                        </div>#}
+{##}
+{##}
+{##}
+{##}
+{#                    </div>#}
+{#                </div>#}
+                <!--/.Row-->
+                <hr />
+
+            <!-- /. PAGE INNER  -->
+        </div>
+{% endblock %}
+

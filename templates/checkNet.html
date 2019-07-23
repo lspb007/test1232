@@ -1,0 +1,138 @@
+﻿{% extends 'base.html' %}
+{% load staticfiles %}
+{% block title %}系统状态{% endblock %}
+{% block custom_css %}
+
+{% endblock %}
+
+
+{% block menu_active %}
+<li>
+    <a href="/"><i class="fa fa-dashboard "></i>首页</a>
+</li>
+<li>
+    <a href="/detail_src/"><i class="fa fa-flask "></i>巡检安全设备</a>
+</li>
+   <li>
+        <a href="/detail_net/"><i class="fa fa-desktop "></i>巡检网络设备</a>
+    </li>
+
+<li>
+<a href="/checkSec/"><i class="fa fa-eyedropper "></i>最新安全设备状态</a>
+</li>
+<li>
+<a class="active-menu" href="/checkNet/"><i class="fa fa-eyedropper "></i>最新网络设备状态</a>
+</li>
+<li>
+
+
+{% endblock %}
+
+{% block page-wrapper %}
+      <div id="page-inner">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1 class="page-head-line">最新网络设备状态</h1>
+                        <h1 class="page-subhead-line">最近一次巡检的系统状态 </h1>
+
+                    </div>
+                </div>
+                <!-- /. ROW  -->
+                <div class="row">
+
+                </div>
+                <!-- /. ROW  -->
+                 <div class="row">
+                   <div class="col-md-12">
+                       <div class="panel panel-primary">
+      <!-- Default panel contents -->
+      <div class="panel-heading">网络设备列表</div>
+
+      <!-- Table -->
+      <table class="table">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>网络设备名称</th>
+            <th>最后巡检时间</th>
+            <th>巡检员</th>
+            <th>上行带宽</th>
+              <th>下行带宽</th>
+              <th>备注</th>
+          </tr>
+        </thead>
+        <tbody>
+            {% for row in system_check_new %}
+                <tr class="list-group-item-success">
+            <td>{{ forloop.counter}}</td>
+            <td>{{ row.Net_id }}</td>
+            <td>{{ row.add_time }} </td>
+            <td>{{ row.user_name }} </td>
+               <td>{{ row.UpstreamBandwidth}}</td>
+                 <td>{{ row.DownstreamBandwidth}}</td>
+                 <td>{{ row.details}}</td>
+          </tr>
+            {% endfor %}
+
+        </tbody>
+      </table>
+    </div>
+                   </div>
+                     </div>
+      <div class="row">
+                <div class="col-md-4 col-sm-4">
+                    <div class="panel panel-info">
+                        <div class="panel-heading">
+                            核心交换机状态
+                        </div>
+                        <div class="panel-body">
+                            <p> {{ netsys.CoreSwitch }}</p>
+                        </div>
+                        <div class="panel-footer">
+                             页脚内容
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4">
+                    <div class="panel panel-warning">
+                        <div class="panel-heading">
+                            汇聚交换机状态
+                        </div>
+                        <div class="panel-body">
+                            <p>{{ netsys.ConvergingSwitch }}</p>
+                        </div>
+                        <div class="panel-footer">
+                             页脚内容
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4">
+                    <div class="panel panel-danger">
+                        <div class="panel-heading">
+                            无线设备状态
+                        </div>
+                        <div class="panel-body">
+                            <p>{{ netsys.details }}</p>
+                        </div>
+                        <div class="panel-footer">
+                            页脚内容
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+{% endblock %}
+
+{% block custom_js %}
+    <script>
+    tag = document.getElementsByName('status')
+    for(var i in tag){
+        if(tag[i].innerText=='故障'){
+            tag[i].className='label label-danger'
+        }
+    }
+    </script>
+{% endblock %}
+
+
