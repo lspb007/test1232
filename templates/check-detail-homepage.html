@@ -21,14 +21,35 @@
 
     <!-- GOOGLE FONTS-->
     <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+    <script src="{% static 'js/jquery.js' %}"></script>
+<script language="javascript">
+var json = [
+{ "name": "张三", "sex": "男", "age": "2110" },
+{ "name": "李四", "sex": "男", "age": "18" },
+{ "name": "王五", "sex": "男", "age": "19" }
+];
+var a_list={{ auto_check_info_list|safe }}
+$(function(){
+var s = "";
+for(var i = 0; i < a_list.length; i++) {
+    if(a_list[i].SYSERROR==1) {
+        s = "<tr><td>" + a_list[i].IP + "</td><td align=\"center\">" + a_list[i].CPU + "</td><td align=\"center\">" + a_list[i].MEM + "</td><td align=\"center\">" + a_list[i].DISK + "</td></tr>";
+    }
+    else{
+        s = "<tr><td>" + a_list[i].IP + "</td><td colspan=\"3\">"  + a_list[i].SYSERROR + "</td></tr>";
+    }
+$("#tab").append(s);
+}
+});
+</script>
 </head>
 <body>
 <div id="page-wrapper">
             <div id="page-inner">
                 <div class="row">
-                    <div class="col-md-12">
+                            <div class="col-md-12">
                         <h1 class="page-head-line">{{ check_system }}</h1>
-                        <h1 class="page-subhead-line">This is dummy text , you can replace it with your original text. </h1>
+                        <strong>巡检方法：</strong><pre >{{ check_system.checkmethod}}</pre>
 
                     </div>
                 </div>
@@ -69,10 +90,11 @@
                                         <td>{{ course.resource_IP }}</td>
 {#                                        <td type="hidden">{{ course.id }}</td>#}
 
-                                        <input type="hidden" name="dev_id" id="dev_id" value={{ course.id }}>
-                                        <td ><input type="text" name="ckeckCPU" id="ckeckCPU" placeholder="1-100" maxlength="30" size="5" value=50></td>
-                                        <td><input type="text" name="checkMEM" id="checkMEM" placeholder="1-100" maxlength="30" size="5" value=50></td>
-                                        <td><input type="text" name="checkDISK" id="checkDISK" placeholder="1-100" maxlength="30" size="5" value=50></td>
+                                            <input type="hidden" name="dev_id" id="dev_id" value={{ course.id }}>
+                                            <td ><input type="text" name="ckeckCPU" id="ckeckCPU" placeholder="1-100" maxlength="30" size="5" value="50"></td>
+                                            <td><input type="text" name="checkMEM" id="checkMEM" placeholder="1-100" maxlength="30" size="5" value="50"></td>
+                                            <td><input type="text" name="checkDISK" id="checkDISK" placeholder="1-100" maxlength="30" size="5" value="50"></td>
+
 {#                                        <td><input type="text" name="service" id="service" placeholder="服务和进程状态" maxlength="30" size="5" value="1"></td>#}
                                             <td>
                                             <select  name="service" id="service" >
@@ -80,7 +102,7 @@
                                                 <option value="2">异常</option>
                                             </select>
                                             </td>
-                                        <td><input type="text" name="details" id="details" placeholder="无" maxlength="30" size="50" value="无"></td>
+                                        <td><input type="text" name="details" id="details" placeholder="无" maxlength="30" size="50" value={{ auto_check_info.ERROR }}></td>
                                             {% endfor %}
                                     </tbody>
                                 </table>
@@ -124,6 +146,41 @@
 {% csrf_token %}
                                     </form>
                             </div>
+                        <div class="panel-body">
+
+
+
+
+
+
+
+                            </div>
+                        </div>
+                            </div>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                           <div class="panel panel-info" >
+                        <div class="panel-heading">
+                            自动巡检结果
+                        </div>
+                        <div class="panel-body">
+
+{#                                {{ auto_check_info_list}}#}
+                                {% if ssh_error == '' %}
+                                <table border="1px" id="tab">
+                                    <tr height="20px">
+                                     <td>IP地址</td>
+                                     <td>CPU使用率（%）</td>
+                                    <td>内存使用率（%）</td>
+                                        <td>系统硬盘使用率（%）</td>
+
+                                    </tr>
+                                    </table><br>
+                                {% else %}
+                                    <span>{{ ssh_error }}</span>
+                                {% endif %}
+
+
+                            </div>
                         </div>
                             </div>
             </div>
@@ -131,19 +188,20 @@
 
             </div>
             <!-- /. PAGE INNER  -->
-        </div>
+    {% block custom_js %}
 
 
+    {% endblock %}
     <!-- /. FOOTER  -->
     <!-- SCRIPTS -AT THE BOTOM TO REDUCE THE LOAD TIME-->
     <!-- JQUERY SCRIPTS -->
-    <script src="assets/js/jquery-1.10.2.js"></script>
+{#    <script src="assets/js/jquery-1.10.2.js"></script>#}
     <!-- BOOTSTRAP SCRIPTS -->
-    <script src="assets/js/bootstrap.js"></script>
+{#    <script src="assets/js/bootstrap.js"></script>#}
      <!-- METISMENU SCRIPTS -->
-    <script src="assets/js/jquery.metisMenu.js"></script>
+{#    <script src="assets/js/jquery.metisMenu.js"></script>#}
     <!-- CUSTOM SCRIPTS -->
-    <script src="assets/js/custom.js"></script>
+{#    <script src="assets/js/custom.js"></script>#}
 
 </body>
 </html>

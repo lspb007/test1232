@@ -2,15 +2,27 @@
 <project version="4">
   <component name="dataSourceStorageLocal">
     <data-source name="Django default" uuid="0685e6ea-b25d-4dcf-9a71-635c9f665e7e">
-      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
-      <first-sync>true</first-sync>
+      <database-info product="MySQL" version="5.7.20-log" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.46 ( Revision: 9cc87a48e75c2d2e87c1a293b2862ce651cb256e )">
+        <extra-name-characters>#@</extra-name-characters>
+        <identifier-quote-string>`</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower" />
       <user-name>root</user-name>
+      <introspection-schemas>*:mxonline</introspection-schemas>
+      <resolve-scope>mxonline:</resolve-scope>
+      <unqualified-resolve-schemas>mxonline:</unqualified-resolve-schemas>
     </data-source>
     <data-source name="mxonline1@localhost" uuid="45c8b2bc-dd16-4377-b701-980a76b75299">
-      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
+      <database-info product="MySQL" version="5.7.20-log" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.46 ( Revision: 9cc87a48e75c2d2e87c1a293b2862ce651cb256e )">
+        <extra-name-characters>#@</extra-name-characters>
+        <identifier-quote-string>`</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower" />
       <secret-storage>master_key</secret-storage>
-      <first-sync>true</first-sync>
       <user-name>root</user-name>
+      <introspection-schemas>*:mxonline1</introspection-schemas>
+      <resolve-scope>mxonline1:</resolve-scope>
+      <unqualified-resolve-schemas>mxonline1:</unqualified-resolve-schemas>
     </data-source>
   </component>
 </project>

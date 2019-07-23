@@ -11,6 +11,8 @@
     <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet" />
     <!-- FONTAWESOME STYLES-->
     <link href="{% static 'css/font-awesome.css'%}" rel="stylesheet" />
+
+    <link href="{% static 'css/bootstrap-fileupload.min.css' %}" rel="stylesheet" />
        <!--CUSTOM BASIC STYLES-->
     <link href="{% static 'css/basic.css'%}" rel="stylesheet" />
     <!--CUSTOM MAIN STYLES-->
@@ -31,16 +33,20 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">北京电视台巡检系统</a>
+                <a class="navbar-brand" href="/">办公域基础巡检系统</a>
             </div>
 
             <div class="header-right">
           {% if request.user.is_authenticated %}
 
 
+                                        {% if request.user.department == 3 %}
+                                        <dev>监控科</dev>
+                                        {% endif %}
 
-              <dev>  {{ request.user.username }}</dev>
-<a href="{% url 'logout' %}" class="btn btn-danger" title="Logout"><i class="fa fa-exclamation-circle fa-2x"></i></a>
+              <dev>{{ request.user.nick_name }}{{ request.user.department. }}</dev>
+                    <a href="/users/usercenter-info/" class="btn btn-primary" title="进入个人中心"><b ></b><i class="fa fa-bars fa-2x"></i></a>
+                    <a href="{% url 'logout' %}" class="btn btn-danger" title="Logout"><i class="fa fa-exclamation-circle fa-2x"></i></a>
                     {% else %}
 
                    <a href= "/login/" class="btn btn-primary"><i class="glyphicon glyphicon-home"></i> 登录</a>
@@ -58,12 +64,16 @@
                 <ul class="nav" id="main-menu">
                     <li>
                         <div class="user-img-div">
-                            <img src="{% static 'img/user.png' %}" class="img-thumbnail" />
+                            {% if request.user.image %}
+                             <img src="{{ MEDIA_URL }}{{ request.user.image }}" class="img-thumbnail" />
+                            {% else %}
+                                <img src="{% static 'img/user.png' %}" class="img-thumbnail" />
 
+                             {% endif %}
                             <div class="inner-text">
                                 {{ request.user.nick_name }}
                             <br />
-                                <small>Last Login : 2 Weeks Ago </small>
+                                <small> </small>
                             </div>
                         </div>
 
@@ -89,7 +99,7 @@
     <!-- /. WRAPPER  -->
 
     <div id="footer-sec">
-        Copyright &copy; 2016.Company name All rights reserved.More Templates <a href="http://www.cssmoban.com/" target="_blank" title="北京电视台">北京电视台</a> - Collect from <a href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a>
+        Copyright &copy; 2016.Company name All rights reserved.More Templates <a href="http://www.cssmoban.com/" target="_blank" title="北京电视台">北京电视台</a> - Collect from <a href="http://www.cssmoban.com/" title="网页模板" target="_blank"></a>
     </div>
     <!-- /. FOOTER  -->
     <!-- SCRIPTS -AT THE BOTOM TO REDUCE THE LOAD TIME-->
@@ -101,6 +111,8 @@
     <script src="{% static 'js/jquery.metisMenu.js'%}"></script>
        <!-- CUSTOM SCRIPTS -->
     <script src="{% static 'js/custom.js'%}"></script>
+
+     <script src="{% static 'js/bootstrap-fileupload.js'%}"></script>
 
     {% block custom_js %}{% endblock %}
 

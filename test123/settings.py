@@ -74,6 +74,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'django.template.context_processors.media'
             ],
         },
     },
@@ -88,7 +89,7 @@ WSGI_APPLICATION = 'test123.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'mxonline1',
+        'NAME': 'mxonline',
         'USER': 'root',
         'PASSWORD': 'root123',
         'HOST': 'localhost',
@@ -138,3 +139,8 @@ STATIC_URL = '/assets/'
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, "templates/assets"),
 )
+STATIC_ROOT = 'all_statics'
+
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, "media")

@@ -34,29 +34,11 @@
 
 {% block menu_active %}
 <li>
-<a  href="/"><i class="fa fa-dashboard "></i>首页</a>
+<a href="/"><i class="fa fa-dashboard "></i>首页</a>
 </li>
 <li>
 <a class="active-menu" href="/check/"><i class="fa fa-eyedropper "></i>巡检</a>
 </li>
-<li>
-<a href="#"><i class="fa fa-sitemap "></i>业务系统信息 <span class="fa arrow"></span></a>
- <ul class="nav nav-second-level">
-    <li>
-        <a href="#"><i class="fa fa-bicycle "></i>内网系统</a>
-    </li>
-     <li>
-        <a href="#"><i class="fa fa-flask "></i>门户系统</a>
-    </li>
-    <li>
-        <a href="#"><i class="fa fa-flask "></i>LDAP系统</a>
-
-    </li>
-     <li>
-        <a href="#"><i class="fa fa-flask "></i>统一认证平台</a>
-
-    </li>
-</ul>
 </li>
 <li>
 <a href="/checksysinfo/"><i class="fa fa-eyedropper "></i>最新系统状态</a>
@@ -64,6 +46,17 @@
 <li>
 <a href="/checkdevinfo/"><i class="fa fa-eyedropper "></i>最新服务器状态</a>
 </li>
+<li>
+{#<a href="#"><i class="fa fa-sitemap "></i>业务系统信息 <span class="fa arrow"></span></a>#}
+{# <ul class="nav nav-second-level">#}
+{#     {% for systems in all_system %}#}
+{#         <li>#}
+{#        <a href="#"><i class="fa fa-flask "></i>{{ systems.name }}</a>#}
+{#    </li>#}
+{#     {% endfor %}#}
+{##}
+{#</ul>#}
+
 {% endblock %}
 
 
@@ -73,8 +66,8 @@
              <div id="page-inner">
                 <div class="row">
                     <div class="col-md-12">
-                        <h1 class="page-head-line">日常巡检</h1>
-                        <h1 class="page-subhead-line">This is dummy text , you can replace it with your original text. </h1>
+                        <h1 class="page-head-line">日常巡检---{{ department_name }}</h1>
+                        <h1 class="page-subhead-line">按系统巡检进行每日巡检 </h1>
 
                     </div>
                         <div class="row text-center pad-row">

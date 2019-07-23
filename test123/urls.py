@@ -16,12 +16,18 @@ Including another URLconf
 from django.conf.urls import url,include
 from django.contrib import admin
 from check import views
-from check.views import AddUserAskView
+from check.views import AddUserAskView,AddSrcView,AddNetView,AddUserAskView1,AddUserAskView2
+
+
 import xadmin
+from django.views.static import serve
+from test123 import settings
+
 
 urlpatterns = [
     # url(r'^admin/', admin.site.urls),
     url(r'^$', views.index,name='index'),
+    url(r'^index_new/$', views.index_new,name='index_new'),
     url('check/$', views.check),
     # url(r'^detail/(?P<system_id>\d+)/$', views.detail),
 
@@ -31,8 +37,20 @@ urlpatterns = [
     url('checksysinfo/$', views.checksysinfo),
     url('login/$', views.userlogin,name='login'),
     url(r'^logout/$', views.userlogout, name="logout"),
+    # url(r'^usercenter-info/$', ss.as_view(), name="usercenter-info"),
     url(r'^xadmin/', xadmin.site.urls),
-    # url(r'^detail/', views.detail),
-    # url(r'^check/', include('check.urls', namespace="check")),
-    # url(r'^index/', views.index),
+    url(r'^users/', include('users.urls', namespace="users")),
+    url(r'^media/(?P<path>.*)$', serve, {'document_root':settings.MEDIA_ROOT}),
+
+    url('checkSec/$', views.checkSec),
+    url('checkNet/$', views.checkNet),
+    url('detail_src/$', views.detail_src),
+    url(r'^add_src/$', AddSrcView.as_view(), name="add_src"),
+    url('detail_net/$', views.detail_net),
+    url(r'^add_net/$', AddNetView.as_view(), name="add_net"),
+
+    url('finish2/$', views.finish2),
+
+    url(r'^add_ask1/$', AddUserAskView1.as_view(), name="add_ask1"),
+    url(r'^add_ask2/$', AddUserAskView2.as_view(), name="add_ask2"),
 ]

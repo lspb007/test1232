@@ -10,24 +10,6 @@
 <li>
 <a href="/check/"><i class="fa fa-eyedropper "></i>巡检</a>
 </li>
-<li>
-<a href="#"><i class="fa fa-sitemap "></i>业务系统信息 <span class="fa arrow"></span></a>
- <ul class="nav nav-second-level">
-    <li>
-        <a href="#"><i class="fa fa-bicycle "></i>内网系统</a>
-    </li>
-     <li>
-        <a href="#"><i class="fa fa-flask "></i>门户系统</a>
-    </li>
-    <li>
-        <a href="#"><i class="fa fa-flask "></i>LDAP系统</a>
-
-    </li>
-     <li>
-        <a href="#"><i class="fa fa-flask "></i>统一认证平台</a>
-
-    </li>
-</ul>
 </li>
 <li>
 <a href="/checksysinfo/"><i class="fa fa-eyedropper "></i>最新系统状态</a>
@@ -35,6 +17,17 @@
 <li>
 <a href="/checkdevinfo/"><i class="fa fa-eyedropper "></i>最新服务器状态</a>
 </li>
+<li>
+<a href="#"><i class="fa fa-sitemap "></i>业务系统信息 <span class="fa arrow"></span></a>
+ <ul class="nav nav-second-level">
+     {% for systems in all_system %}
+         <li>
+        <a href="#"><i class="fa fa-flask "></i>{{ systems.name }}</a>
+    </li>
+     {% endfor %}
+
+</ul>
+
 {% endblock %}
 
 {% block page-wrapper %}
@@ -42,7 +35,7 @@
 
                 <div class="row">
 
-            <div class="col-md-6 col-sm-6 col-xs-12">
+            <div class="col-md-4 col-sm-6 col-xs-12">
                            <div class="panel panel-danger">
                                     <div class="panel-heading">
                                        登录
@@ -53,12 +46,12 @@
                                              <div class="form-group">
                                                         <label>用户名</label>
                                                         <input class="form-control" type="text" name="username" id="username">
-                                                 <p class="help-block">Help text here.</p>
+                                                 <p class="help-block">内部系统未开放注册</p>
                                                     </div>
                                                         <div class="form-group">
                                                         <label>密码</label>
                                                         <input class="form-control" type="password" name="password" id="password"><div class="error btns login-form-tips" id="jsLoginTips"></div>
-                                                 <p class="help-block">Help text here.</p>
+                                                 <p class="help-block">忘记账号或密码请联系管理员</p>
 
                                                     </div>
                                                     <div class="alert alert-danger">

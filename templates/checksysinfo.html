@@ -8,29 +8,11 @@
 
 {% block menu_active %}
 <li>
-<a  href="/"><i class="fa fa-dashboard "></i>首页</a>
+<a href="/"><i class="fa fa-dashboard "></i>首页</a>
 </li>
 <li>
 <a href="/check/"><i class="fa fa-eyedropper "></i>巡检</a>
 </li>
-<li>
-<a href="#"><i class="fa fa-sitemap "></i>业务系统信息 <span class="fa arrow"></span></a>
- <ul class="nav nav-second-level">
-    <li>
-        <a href="#"><i class="fa fa-bicycle "></i>内网系统</a>
-    </li>
-     <li>
-        <a href="#"><i class="fa fa-flask "></i>门户系统</a>
-    </li>
-    <li>
-        <a href="#"><i class="fa fa-flask "></i>LDAP系统</a>
-
-    </li>
-     <li>
-        <a href="#"><i class="fa fa-flask "></i>统一认证平台</a>
-
-    </li>
-</ul>
 </li>
 <li>
 <a class="active-menu" href="/checksysinfo/"><i class="fa fa-eyedropper "></i>最新系统状态</a>
@@ -38,6 +20,17 @@
 <li>
 <a href="/checkdevinfo/"><i class="fa fa-eyedropper "></i>最新服务器状态</a>
 </li>
+<li>
+{#<a href="#"><i class="fa fa-sitemap "></i>业务系统信息 <span class="fa arrow"></span></a>#}
+{# <ul class="nav nav-second-level">#}
+{#     {% for systems in all_system %}#}
+{#         <li>#}
+{#        <a href="#"><i class="fa fa-flask "></i>{{ systems.name }}</a>#}
+{#    </li>#}
+{#     {% endfor %}#}
+{##}
+{#</ul>#}
+
 {% endblock %}
 
 {% block page-wrapper %}
@@ -45,7 +38,7 @@
                 <div class="row">
                     <div class="col-md-12">
                         <h1 class="page-head-line">最新系统状态</h1>
-                        <h1 class="page-subhead-line">最近一次巡检的状态 </h1>
+                        <h1 class="page-subhead-line">最近一次巡检的系统状态 </h1>
 
                     </div>
                 </div>
@@ -69,6 +62,7 @@
             <th>最后巡检时间</th>
             <th>巡检员</th>
             <th>状态</th>
+              <th>巡检描述</th>
             <th>故障描述</th>
           </tr>
         </thead>
@@ -79,7 +73,8 @@
             <td>{{ row.system_name }}</td>
             <td>{{ row.add_time }} </td>
             <td>{{ row.user_name }} </td>
-            <td>{{ row.get_sysisnormal_display}}</td>
+            <td><span name="status" class="label label-info">{{ row.get_sysisnormal_display }}</span></td>
+                    <td>{{ row.check_details}}</td>
                <td>{{ row.details}}</td>
           </tr>
             {% endfor %}
@@ -93,7 +88,14 @@
 {% endblock %}
 
 {% block custom_js %}
-
+    <script>
+    tag = document.getElementsByName('status')
+    for(var i in tag){
+        if(tag[i].innerText=='故障'){
+            tag[i].className='label label-danger'
+        }
+    }
+    </script>
 {% endblock %}
 
 

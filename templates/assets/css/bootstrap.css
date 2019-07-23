@@ -1774,7 +1774,6 @@ pre code {
   }
   .col-md-3 {
     width: 25%;
-    /*height: 1000px*/
   }
   .col-md-2 {
     width: 16.66666667%;
@@ -2046,6 +2045,7 @@ pre code {
     margin-left: 33.33333333%;
   }
   .col-lg-offset-3 {
+    margin-left: 25%;
   }
   .col-lg-offset-2 {
     margin-left: 16.66666667%;
@@ -2418,9 +2418,6 @@ input[type="month"].input-lg {
 }
 .form-group {
   margin-bottom: 15px;
-    width: 200px;
-    height: 100px;
-
 }
 .radio,
 .checkbox {
@@ -4001,6 +3998,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   .navbar-form .form-control {
     display: inline-block;
     width: auto;
+
     vertical-align: middle;
   }
   .navbar-form .input-group {

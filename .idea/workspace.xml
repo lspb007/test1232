@@ -1,7 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d84e1e1a-b824-4af6-88ff-218d9fdfddd4" name="Default" comment="" />
+    <list default="true" id="d84e1e1a-b824-4af6-88ff-218d9fdfddd4" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/templates/assets/css/style.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/templates/assets/img/banner.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/templates/assets/img/default.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/templates/assets/img/lock.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/templates/assets/img/mail.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/templates/assets/img/person.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/templates/assets/img/phone.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/templates/assets/js/deco-common.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/templates/assets/js/deco-user.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/templates/assets/js/jquery.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/templates/assets/js/jquery.min.js" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/check/adminx.py" afterPath="$PROJECT_DIR$/check/adminx.py" />
+      <change beforePath="$PROJECT_DIR$/check/migrations/0001_initial.py" afterPath="$PROJECT_DIR$/check/migrations/0001_initial.py" />
+      <change beforePath="$PROJECT_DIR$/check/migrations/0002_auto_20180311_1050.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/check/migrations/0003_auto_20180311_1301.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/check/migrations/0004_auto_20180311_2243.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/check/models.py" afterPath="$PROJECT_DIR$/check/models.py" />
+      <change beforePath="$PROJECT_DIR$/check/views.py" afterPath="$PROJECT_DIR$/check/views.py" />
+      <change beforePath="$PROJECT_DIR$/templates/assets/css/bootstrap.css" afterPath="$PROJECT_DIR$/templates/assets/css/bootstrap.css" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html" afterPath="$PROJECT_DIR$/templates/base.html" />
+      <change beforePath="$PROJECT_DIR$/templates/check-detail-homepage.html" afterPath="$PROJECT_DIR$/templates/check-detail-homepage.html" />
+      <change beforePath="$PROJECT_DIR$/templates/check.html" afterPath="$PROJECT_DIR$/templates/check.html" />
+      <change beforePath="$PROJECT_DIR$/templates/checkdevinfo.html" afterPath="$PROJECT_DIR$/templates/checkdevinfo.html" />
+      <change beforePath="$PROJECT_DIR$/templates/checksysinfo.html" afterPath="$PROJECT_DIR$/templates/checksysinfo.html" />
+      <change beforePath="$PROJECT_DIR$/templates/index.html" afterPath="$PROJECT_DIR$/templates/index.html" />
+      <change beforePath="$PROJECT_DIR$/templates/login.html" afterPath="$PROJECT_DIR$/templates/login.html" />
+      <change beforePath="$PROJECT_DIR$/test123/settings.py" afterPath="$PROJECT_DIR$/test123/settings.py" />
+      <change beforePath="$PROJECT_DIR$/test123/urls.py" afterPath="$PROJECT_DIR$/test123/urls.py" />
+      <change beforePath="$PROJECT_DIR$/users/admin.py" afterPath="$PROJECT_DIR$/users/admin.py" />
+      <change beforePath="$PROJECT_DIR$/users/migrations/0001_initial.py" afterPath="$PROJECT_DIR$/users/migrations/0001_initial.py" />
+      <change beforePath="$PROJECT_DIR$/users/models.py" afterPath="$PROJECT_DIR$/users/models.py" />
+      <change beforePath="$PROJECT_DIR$/users/views.py" afterPath="$PROJECT_DIR$/users/views.py" />
+      <change beforePath="$PROJECT_DIR$/users/xadmin.py" afterPath="$PROJECT_DIR$/users/xadmin.py" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -11,89 +48,79 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/test123$Unittests_in_test123.coverage" NAME="Unittests in test123 Coverage Results" MODIFIED="1520406195212" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/test123$codecs.coverage" NAME="codecs Coverage Results" MODIFIED="1528530477748" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="C:/Python35/Lib" />
+    <SUITE FILE_PATH="coverage/test123$ssh.coverage" NAME="ssh Coverage Results" MODIFIED="1528530668170" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/check" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
   <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
     <option name="GROUP_SCHEMA" value="true" />
     <option name="GROUP_CONTENTS" value="false" />
     <option name="SORT_POSITIONED" value="false" />
     <option name="SHOW_TABLE_DETAILS" value="true" />
     <option name="SHOW_EMPTY_GROUPS" value="false" />
     <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
-    <PATH>
-      <PATH_ELEMENT>
-        <option name="myItemId" />
-        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="mxonline1@localhost" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-    </PATH>
-    <PATH>
-      <PATH_ELEMENT>
-        <option name="myItemId" />
-        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="Django default" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-    </PATH>
+    <expand />
+    <select />
   </component>
   <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="test123" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/check/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="30" column="23" lean-forward="false" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="23" />
+            <state relative-caret-position="371">
+              <caret line="596" column="43" lean-forward="false" selection-start-line="596" selection-start-column="43" selection-end-line="596" selection-end-column="43" />
               <folding>
-                <element signature="e#0#35#0" expanded="true" />
-                <marker date="1520986690173" expanded="true" signature="1753:2217" ph="select check... check_systeminfo" />
-                <marker date="1520986690173" expanded="true" signature="1997:2066" ph="select MAX(a... check_userchecksys" />
-                <marker date="1520986690173" expanded="true" signature="2254:2706" ph="select check... check_systeminfo" />
-                <marker date="1520986690173" expanded="true" signature="2741:3001" ph="select check... check_systeminfo" />
-                <marker date="1520986690173" expanded="true" signature="3037:3503" ph="select check... check_systeminfo" />
-                <marker date="1520986690173" expanded="true" signature="6383:6531" ph="select * fro... check_userchecksys" />
-                <marker date="1520986690173" expanded="true" signature="6436:6505" ph="select MAX(a... check_userchecksys" />
-                <marker date="1520986690173" expanded="true" signature="6876:7210" ph="select check... check_usercheckdev" />
-                <marker date="1520986690173" expanded="true" signature="7009:7073" ph="select MAX(a... check_usercheckdev" />
+                <marker date="1544101661506" expanded="true" signature="3693:4157" ph="select check... check_systeminfo" />
+                <marker date="1544101661506" expanded="true" signature="3937:4006" ph="select MAX(a... check_userchecksys" />
+                <marker date="1544101661506" expanded="true" signature="4194:4646" ph="select check... check_systeminfo" />
+                <marker date="1544101661506" expanded="true" signature="4681:4941" ph="select check... check_systeminfo" />
+                <marker date="1544101661506" expanded="true" signature="4977:5443" ph="select check... check_systeminfo" />
+                <marker date="1544101661506" expanded="true" signature="13592:13740" ph="select * fro... check_userchecksys" />
+                <marker date="1544101661506" expanded="true" signature="13645:13714" ph="select MAX(a... check_userchecksys" />
+                <marker date="1544101661506" expanded="true" signature="14327:14552" ph="select * fro... check_userchecksys" />
+                <marker date="1544101661506" expanded="true" signature="14385:14438" ph="select s_id check_department2system" />
+                <marker date="1544101661506" expanded="true" signature="14457:14526" ph="select MAX(a... check_userchecksys" />
+                <marker date="1544101661506" expanded="true" signature="15223:15448" ph="select * fro... check_userchecksys" />
+                <marker date="1544101661506" expanded="true" signature="15281:15334" ph="select s_id check_department2system" />
+                <marker date="1544101661506" expanded="true" signature="15353:15422" ph="select MAX(a... check_userchecksys" />
+                <marker date="1544101661506" expanded="true" signature="16126:16351" ph="select * fro... check_userchecksys" />
+                <marker date="1544101661506" expanded="true" signature="16184:16237" ph="select s_id check_department2system" />
+                <marker date="1544101661506" expanded="true" signature="16256:16325" ph="select MAX(a... check_userchecksys" />
+                <marker date="1544101661506" expanded="true" signature="16938:17282" ph="select check... check_usercheckdev" />
+                <marker date="1544101661506" expanded="true" signature="17071:17135" ph="select MAX(a... check_usercheckdev" />
+                <marker date="1544101661506" expanded="true" signature="17869:18313" ph="select check... check_usercheckdev" />
+                <marker date="1544101661506" expanded="true" signature="18002:18066" ph="select MAX(a... check_usercheckdev" />
+                <marker date="1544101661506" expanded="true" signature="18230:18283" ph="select s_id check_department2system" />
+                <marker date="1544101661506" expanded="true" signature="18900:19344" ph="select check... check_usercheckdev" />
+                <marker date="1544101661506" expanded="true" signature="19033:19097" ph="select MAX(a... check_usercheckdev" />
+                <marker date="1544101661506" expanded="true" signature="19261:19314" ph="select s_id check_department2system" />
+                <marker date="1544101661506" expanded="true" signature="19931:20375" ph="select check... check_usercheckdev" />
+                <marker date="1544101661506" expanded="true" signature="20064:20128" ph="select MAX(a... check_usercheckdev" />
+                <marker date="1544101661506" expanded="true" signature="20292:20345" ph="select s_id check_department2system" />
+                <marker date="1544101661506" expanded="true" signature="22388:22526" ph="select * fro... check_userchecksec" />
+                <marker date="1544101661506" expanded="true" signature="22441:22505" ph="select MAX(a... check_userchecksec" />
+                <marker date="1544101661506" expanded="true" signature="23045:23183" ph="select * fro... check_userchecknet" />
+                <marker date="1544101661506" expanded="true" signature="23098:23162" ph="select MAX(a... check_userchecknet" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/users/models.py">
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test123/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="57">
-              <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="finish.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/finish.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="836">
-              <caret line="44" column="37" lean-forward="false" selection-start-line="44" selection-start-column="37" selection-end-line="44" selection-end-column="37" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="checkdevinfo.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/checkdevinfo.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1159">
-              <caret line="61" column="14" lean-forward="false" selection-start-line="61" selection-start-column="14" selection-end-line="61" selection-end-column="14" />
+            <state relative-caret-position="465">
+              <caret line="135" column="59" lean-forward="true" selection-start-line="135" selection-start-column="59" selection-end-line="135" selection-end-column="59" />
               <folding />
             </state>
           </provider>
@@ -102,58 +129,78 @@
       <file leaf-file-name="check-detail-homepage.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/check-detail-homepage.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="70">
-              <caret line="105" column="46" lean-forward="false" selection-start-line="105" selection-start-column="46" selection-end-line="105" selection-end-column="46" />
+            <state relative-caret-position="1140">
+              <caret line="60" column="0" lean-forward="false" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="checksysinfo.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/checksysinfo.html">
+      <file leaf-file-name="check-detail-sec.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/check-detail-sec.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1539">
-              <caret line="81" column="46" lean-forward="false" selection-start-line="81" selection-start-column="23" selection-end-line="81" selection-end-column="46" />
+            <state relative-caret-position="304">
+              <caret line="16" column="17" lean-forward="false" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="29" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/templates/index.html">
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test123/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="22" column="13" lean-forward="true" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+            <state relative-caret-position="342">
+              <caret line="18" column="50" lean-forward="false" selection-start-line="18" selection-start-column="50" selection-end-line="18" selection-end-column="50" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="check-detail-homepage1111.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/check-detail-homepage1111.html">
+      <file leaf-file-name="checkNet.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/checkNet.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="2033">
+              <caret line="107" column="22" lean-forward="false" selection-start-line="107" selection-start-column="22" selection-end-line="107" selection-end-column="22" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/base.html">
+      <file leaf-file-name="check-detail-net.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/check-detail-net.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="532">
-              <caret line="46" column="31" lean-forward="false" selection-start-line="46" selection-start-column="31" selection-end-line="46" selection-end-column="31" />
+            <state relative-caret-position="2299">
+              <caret line="121" column="41" lean-forward="false" selection-start-line="121" selection-start-column="41" selection-end-line="121" selection-end-column="41" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="check.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/check.html">
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/check/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="80" column="18" lean-forward="true" selection-start-line="80" selection-start-column="18" selection-end-line="80" selection-end-column="59" />
+            <state relative-caret-position="418">
+              <caret line="24" column="15" lean-forward="false" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="15" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sites.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/extra_apps/xadmin/sites.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="38">
+              <caret line="2" column="9" lean-forward="false" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="0004_networkdevice_userchecknet_userchecknetsys.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/check/migrations/0004_networkdevice_userchecknet_userchecknetsys.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="798">
+              <caret line="46" column="14" lean-forward="false" selection-start-line="46" selection-start-column="14" selection-end-line="46" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -164,44 +211,48 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="JavaScript File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>check</find>
-      <find>add</find>
-      <find>page-wrapper</find>
-      <find>check3</find>
-      <find>luoxu</find>
-      <find>psef</find>
-      <find>Context Classes</find>
-      <find>form</find>
-      <find>BASIC FORM</find>
+      <find>Department</find>
+      <find>obj</find>
+      <find>chech_t</find>
+      <find>system_check_time</find>
+      <find>system_nums</find>
       <find>system_check</find>
-      <find>menu_active</find>
+      <find>日常</find>
+      <find>all_system</find>
+      <find>/</find>
+      <find>system_name</find>
+      <find>2</find>
+      <find>system_check_new</find>
+      <find>index</find>
+      <find>fa</find>
+      <find>check-detail-homepage.html</find>
+      <find>auto_check_info_list</find>
+      <find>custom_js</find>
+      <find>submit</find>
+      <find>jsStayForm</find>
+      <find>class</find>
+      <find>add_ask</find>
+      <find>time</find>
+      <find>checkDISK</find>
+      <find>checkDISKsession</find>
+      <find>finish2</find>
+      <find>check_system</find>
+      <find>巡检方法</find>
       <find>res_count</find>
-      <find>系统</find>
-      <find>print</find>
-      <find>def</find>
-      <find>get</find>
-      <find>_</find>
-      <find>CONTEXT</find>
-      <find>context_processors.request</find>
-      <find>img</find>
-      <find>100</find>
-      <find>100px</find>
-      <find>padding</find>
-      <find>css</find>
-      <find>input-group-addon</find>
-      <find>SINGUP FORM</find>
+      <find>userchecknets</find>
       <find>巡检</find>
-      <find>base</find>
-      <find>bla</find>
-      <find>管理员</find>
     </findStrings>
+    <replaceStrings>
+      <replace>img</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -209,35 +260,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/test123/__init__.py" />
-        <option value="$PROJECT_DIR$/check/urls.py" />
-        <option value="$PROJECT_DIR$/check/form.py" />
-        <option value="$PROJECT_DIR$/templates/check_base.html" />
         <option value="$PROJECT_DIR$/templates/add.html" />
-        <option value="$PROJECT_DIR$/check/models.py" />
-        <option value="$PROJECT_DIR$/templates/checkdevinfo.html" />
-        <option value="$PROJECT_DIR$/templates/checksysinfo.html" />
         <option value="$PROJECT_DIR$/templates/check-detail-homepage-old.html" />
-        <option value="$PROJECT_DIR$/users/models.py" />
-        <option value="$PROJECT_DIR$/users/admin.py" />
-        <option value="$PROJECT_DIR$/users/xadmin.py" />
         <option value="$PROJECT_DIR$/check/xadmin.py" />
         <option value="$PROJECT_DIR$/check/admin.py" />
-        <option value="$PROJECT_DIR$/check/adminx.py" />
         <option value="$PROJECT_DIR$/users/apps.py" />
         <option value="$PROJECT_DIR$/check/apps.py" />
         <option value="$PROJECT_DIR$/check/__init__.py" />
         <option value="$PROJECT_DIR$/users/__init__.py" />
-        <option value="$PROJECT_DIR$/templates/check.html" />
         <option value="$PROJECT_DIR$/templates/finish.html" />
-        <option value="$PROJECT_DIR$/users/views.py" />
+        <option value="$PROJECT_DIR$/all_statics/css/bootstrap.css" />
+        <option value="$PROJECT_DIR$/templates/assets/css/bootstrap.css" />
+        <option value="$PROJECT_DIR$/templates/form-advance.html" />
         <option value="$PROJECT_DIR$/test123/settings.py" />
+        <option value="$PROJECT_DIR$/templates/Result.html" />
+        <option value="$PROJECT_DIR$/users/forms.py" />
+        <option value="$PROJECT_DIR$/users/urls.py" />
+        <option value="$PROJECT_DIR$/users/views.py" />
+        <option value="$PROJECT_DIR$/templates/assets/js/deco-user.js" />
+        <option value="$PROJECT_DIR$/templates/password_reset.html" />
         <option value="$PROJECT_DIR$/templates/login.html" />
-        <option value="$PROJECT_DIR$/test123/urls.py" />
+        <option value="$PROJECT_DIR$/templates/usercenter-info.html" />
+        <option value="$PROJECT_DIR$/templates/assets/js/jquery.js" />
+        <option value="$PROJECT_DIR$/check/ssh.py" />
+        <option value="$PROJECT_DIR$/check/migrations/0001_initial.py" />
+        <option value="$PROJECT_DIR$/templates/assets/css/style.css" />
         <option value="$PROJECT_DIR$/templates/base.html" />
-        <option value="$PROJECT_DIR$/templates/check-detail-homepage.html" />
-        <option value="$PROJECT_DIR$/check/views.py" />
+        <option value="$PROJECT_DIR$/users/xadmin.py" />
+        <option value="$PROJECT_DIR$/users/admin.py" />
+        <option value="$PROJECT_DIR$/users/adminx.py" />
+        <option value="$PROJECT_DIR$/users/models.py" />
+        <option value="$PROJECT_DIR$/jilu" />
+        <option value="$PROJECT_DIR$/templates/checksysinfo_5.html" />
         <option value="$PROJECT_DIR$/templates/index.html" />
+        <option value="$PROJECT_DIR$/templates/checkdevinfo.html" />
+        <option value="$PROJECT_DIR$/templates/check.html" />
+        <option value="$PROJECT_DIR$/templates/index_5.html" />
+        <option value="$PROJECT_DIR$/templates/check-detail-sec.html" />
+        <option value="$PROJECT_DIR$/templates/checkSec.html" />
+        <option value="$PROJECT_DIR$/templates/finish2.html" />
+        <option value="$PROJECT_DIR$/test123/urls.py" />
+        <option value="$PROJECT_DIR$/templates/checksysinfo.html" />
+        <option value="$PROJECT_DIR$/check/views.py" />
+        <option value="$PROJECT_DIR$/templates/check-detail-homepage2.html" />
+        <option value="$PROJECT_DIR$/templates/check-detail-homepage1.html" />
+        <option value="$PROJECT_DIR$/templates/check-detail-homepage.html" />
+        <option value="$PROJECT_DIR$/templates/index_new.html" />
+        <option value="$PROJECT_DIR$/check/adminx.py" />
+        <option value="$PROJECT_DIR$/check/migrations/0004_networkdevice_userchecknet_userchecknetsys.py" />
+        <option value="$PROJECT_DIR$/templates/checkNet.html" />
+        <option value="$PROJECT_DIR$/templates/check-detail-net.html" />
+        <option value="$PROJECT_DIR$/check/models.py" />
       </list>
     </option>
   </component>
@@ -247,10 +320,11 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="1912" />
+    <option name="y" value="-8" />
     <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="height" value="1096" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -268,6 +342,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -304,30 +380,28 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/test123" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.project" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js.eslint.eslintPackage" value="" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\lsp007\PycharmProjects\test123\extra_apps" />
-      <recent name="C:\Users\lsp007\PycharmProjects\test123" />
-      <recent name="C:\Users\lsp007\PycharmProjects\test123\templates" />
-      <recent name="C:\Users\lsp\PycharmProjects\test123\templates" />
-      <recent name="C:\Users\lsp\PycharmProjects\test123\templates\assets" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\lsp007\PycharmProjects\test123\extra_apps" />
       <recent name="C:\Users\lsp\PycharmProjects\test123\templates\assets" />
+      <recent name="C:\Users\lsp007\PycharmProjects\test123\extra_apps" />
       <recent name="C:\Users\lsp\PycharmProjects\test123\templates" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\lsp\PycharmProjects\test123\templates" />
+      <recent name="C:\Users\lsp007\PycharmProjects\test123\templates" />
+      <recent name="C:\Users\lsp\PycharmProjects\test123\templates\assets\img" />
+      <recent name="C:\Users\lsp\PycharmProjects\test123\templates\assets\css" />
+      <recent name="C:\Users\lsp\PycharmProjects\test123\templates\assets\js" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -343,24 +417,63 @@
     </option>
   </component>
   <component name="RunManager" selected="Django server.test123">
-    <configuration name="base.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/test123/templates/base.html" />
+    <configuration name="base.html" type="JavascriptDebugType" factoryName="JavaScript Debug" nameIsGenerated="true" uri="http://localhost:63342/test123/templates/base.html" />
     <configuration name="check-detail-homepage.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/test123/templates/check-detail-homepage.html" />
+    <configuration name="index_new.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/test123/templates/index_new.html" />
     <configuration name="login.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/test123/templates/login.html" />
-    <configuration name="test123" type="Python.DjangoServer" factoryName="Django server">
+    <configuration name="codecs" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="C:/Python35/Lib" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="test123" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="C:/Python35/Lib/codecs.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="ssh" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/check" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="test123" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/check/ssh.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="test123" type="Python.DjangoServer" factoryName="Django server" activateToolWindowBeforeRun="false">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
         <env name="DJANGO_SETTINGS_MODULE" value="test123.settings" />
       </envs>
-      <option name="SDK_HOME" value="C:\Users\lsp007\Envs\test123\Scripts\python.exe" />
+      <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
+      <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="test123" />
       <option name="launchJavascriptDebuger" value="false" />
-      <option name="port" value="8001" />
+      <option name="port" value="8000" />
       <option name="host" value="0.0.0.0" />
       <option name="additionalOptions" value="" />
       <option name="browserUrl" value="" />
@@ -605,42 +718,30 @@
       <arguments />
       <envs />
     </configuration>
-    <configuration name="Unittests in test123" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="test123" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-    </configuration>
-    <list size="5">
+    <list size="7">
       <item index="0" class="java.lang.String" itemvalue="Django server.test123" />
       <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.base.html" />
       <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.check-detail-homepage.html" />
-      <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in test123" />
-      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.login.html" />
+      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.login.html" />
+      <item index="4" class="java.lang.String" itemvalue="Python.ssh" />
+      <item index="5" class="java.lang.String" itemvalue="Python.codecs" />
+      <item index="6" class="java.lang.String" itemvalue="JavaScript Debug.index_new.html" />
     </list>
     <recent_temporary>
-      <list size="4">
-        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.login.html" />
-        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.check-detail-homepage.html" />
-        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.base.html" />
-        <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in test123" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.index_new.html" />
+        <item index="1" class="java.lang.String" itemvalue="Python.ssh" />
+        <item index="2" class="java.lang.String" itemvalue="Python.codecs" />
+        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.login.html" />
+        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.check-detail-homepage.html" />
       </list>
     </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
-  <component name="SvnConfiguration">
-    <configuration />
+  <component name="SvnConfiguration" myUseAcceleration="nothing">
+    <configuration>C:\Users\Administrator\AppData\Roaming\Subversion</configuration>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -667,29 +768,28 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="0" width="1936" height="1056" extended-state="0" />
-    <editor active="true" />
+    <frame x="1912" y="-8" width="1936" height="1096" extended-state="6" />
     <layout>
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.4978678" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22943723" sideWeight="0.5399787" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22943723" sideWeight="0.46002132" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.4978678" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.4978678" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.4978678" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21375267" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3275488" sideWeight="0.47654584" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14730291" sideWeight="0.66151386" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14730291" sideWeight="0.33848614" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3275488" sideWeight="0.4936034" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3253796" sideWeight="0.48507464" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3275488" sideWeight="0.4936034" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19989339" sideWeight="0.86101085" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.118336886" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39935064" sideWeight="0.49573562" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3991323" sideWeight="0.45948827" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14925373" sideWeight="0.13898917" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="manage.py@test123" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3365801" sideWeight="0.48294243" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329718" sideWeight="0.4914712" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="manage.py@test123" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28106508" sideWeight="0.42206076" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Concurrent Activities Diagram" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32911393" sideWeight="0.49791667" order="8" side_tool="false" content_ui="tabs" />
     </layout>
@@ -700,6 +800,9 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="LAST_COMMIT_MESSAGE" value="" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <default-breakpoints>
@@ -709,348 +812,402 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="17" />
+      <option name="time" value="69" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/templates/assets/js/plugins/layer/skin/default/loading-0.gif" />
-    <entry file="file://$PROJECT_DIR$/templates/assets/js/plugins/layer/skin/default/loading-1.gif" />
-    <entry file="file://$PROJECT_DIR$/templates/assets/js/plugins/layer/skin/default/loading-2.gif" />
-    <entry file="file://$PROJECT_DIR$/templates/assets/js/plugins/layer/skin/layer.css" />
-    <entry file="file://$PROJECT_DIR$/templates/assets/js/plugins/layer/skin/layer.ext.css" />
-    <entry file="file://$PROJECT_DIR$/templates/assets/js/plugins/layer/extend/layer.ext.js" />
-    <entry file="file://$PROJECT_DIR$/templates/assets/js/jquery-1.10.2.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/pycharm.jar!/resources/html5-schema/html5/meta.rnc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="988">
-          <caret line="52" column="31" lean-forward="false" selection-start-line="52" selection-start-column="31" selection-end-line="52" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/index-baknotbase.html" />
-    <entry file="file://$PROJECT_DIR$/templates/assets/css/basic.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://E:/BaiduNetdiskDownload/cmdb/第20周-Python3.5-零基础-高级-项目实战最新教程-共15章节/第20周-源码/s14day20/templates/host.html" />
-    <entry file="file://$USER_HOME$/Envs/test123/Lib/site-packages/django/contrib/staticfiles/templatetags/staticfiles.py" />
-    <entry file="file://$USER_HOME$/Desktop/test123/test123/test123/settings.py" />
-    <entry file="file://$PROJECT_DIR$/assets/js/wizard/jquery.steps.js" />
-    <entry file="file://$PROJECT_DIR$/check/tests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/assets/css/bootstrap-fileupload.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/assets/css/custom.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-57">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/assets/css/bootstrap.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="713">
-          <caret line="3214" column="9" lean-forward="false" selection-start-line="3214" selection-start-column="2" selection-end-line="3214" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/pycharm.jar!/resources/html5-schema/html5/web-forms.rnc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="468" column="33" lean-forward="false" selection-start-line="468" selection-start-column="33" selection-end-line="468" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/extra_apps/DjangoUeditor/static/ueditor/php/config.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/extra_apps/xadmin/.tx/config">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="13" column="9" lean-forward="false" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/check/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="589">
-          <caret line="41" column="30" lean-forward="false" selection-start-line="41" selection-start-column="30" selection-end-line="41" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/check/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="18" column="42" lean-forward="true" selection-start-line="18" selection-start-column="42" selection-end-line="18" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/extra_apps/xadmin/templates/xadmin/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="22" column="33" lean-forward="true" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/extra_apps/xadmin/adminx.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/extra_apps/xadmin/views/base.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1025">
-          <caret line="314" column="6" lean-forward="false" selection-start-line="314" selection-start-column="6" selection-end-line="314" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/check/adminx.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="23" column="26" lean-forward="false" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/check/apps.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/check/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/extra_apps/xadmin/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/check-detail-homepage-old.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="35" column="31" lean-forward="false" selection-start-line="35" selection-start-column="31" selection-end-line="35" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Envs/test123/Lib/site-packages/django/contrib/auth/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="88" column="4" lean-forward="false" selection-start-line="88" selection-start-column="4" selection-end-line="88" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/users/xadmin.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="190">
+          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/users/views.py">
+    <entry file="file://$PROJECT_DIR$/templates/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="798">
+          <caret line="42" column="69" lean-forward="false" selection-start-line="42" selection-start-column="59" selection-end-line="42" selection-end-column="69" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/users/tests.py">
+    <entry file="file://$USER_HOME$/Envs/test123/Lib/site-packages/django/views/generic/base.py" />
+    <entry file="file://$PROJECT_DIR$/users/forms.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="171">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/users/apps.py">
+    <entry file="file://$PROJECT_DIR$/templates/finish2.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="19" lean-forward="true" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/users/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="10" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/users/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="45" lean-forward="true" selection-start-line="0" selection-start-column="45" selection-end-line="0" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test123/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="55" column="50" lean-forward="true" selection-start-line="55" selection-start-column="50" selection-end-line="55" selection-end-column="50" />
-          <folding>
-            <element signature="e#308#317#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="69" column="55" lean-forward="true" selection-start-line="69" selection-start-column="55" selection-end-line="69" selection-end-column="55" />
-          <folding>
-            <element signature="n#block#1;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test123/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="627">
-          <caret line="33" column="39" lean-forward="false" selection-start-line="33" selection-start-column="39" selection-end-line="33" selection-end-column="39" />
-          <folding>
-            <element signature="e#640#680#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="893">
+          <caret line="47" column="26" lean-forward="false" selection-start-line="47" selection-start-column="26" selection-end-line="47" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/finish.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="836">
-          <caret line="44" column="37" lean-forward="false" selection-start-line="44" selection-start-column="37" selection-end-line="44" selection-end-column="37" />
-          <folding />
+        <state relative-caret-position="779">
+          <caret line="41" column="95" lean-forward="false" selection-start-line="41" selection-start-column="90" selection-end-line="41" selection-end-column="95" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/check-detail-homepage1111.html">
+    <entry file="file://$PROJECT_DIR$/templates/checkSec.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="304">
+          <caret line="16" column="29" lean-forward="false" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/checkdevinfo.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1159">
-          <caret line="61" column="14" lean-forward="false" selection-start-line="61" selection-start-column="14" selection-end-line="61" selection-end-column="14" />
+        <state relative-caret-position="380">
+          <caret line="20" column="22" lean-forward="false" selection-start-line="20" selection-start-column="3" selection-end-line="20" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/checksysinfo.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1539">
-          <caret line="81" column="46" lean-forward="false" selection-start-line="81" selection-start-column="23" selection-end-line="81" selection-end-column="46" />
-          <folding />
+        <state relative-caret-position="1767">
+          <caret line="93" column="35" lean-forward="false" selection-start-line="93" selection-start-column="35" selection-end-line="93" selection-end-column="35" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/check-detail-homepage.html">
+    <entry file="file://$PROJECT_DIR$/check/ssh.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="70">
-          <caret line="105" column="46" lean-forward="false" selection-start-line="105" selection-start-column="46" selection-end-line="105" selection-end-column="46" />
-          <folding />
+        <state relative-caret-position="152">
+          <caret line="168" column="47" lean-forward="true" selection-start-line="168" selection-start-column="47" selection-end-line="168" selection-end-column="47" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/base.html">
+    <entry file="file://$PROJECT_DIR$/users/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
-          <caret line="46" column="31" lean-forward="false" selection-start-line="46" selection-start-column="31" selection-end-line="46" selection-end-column="31" />
-          <folding />
+        <state relative-caret-position="-520">
+          <caret line="8" column="48" lean-forward="true" selection-start-line="8" selection-start-column="48" selection-end-line="8" selection-end-column="48" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/users/models.py">
+    <entry file="file://$USER_HOME$/test123/Lib/site-packages/django/db/models/manager.py" />
+    <entry file="file://$PROJECT_DIR$/check/tests.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="17" />
-          <folding />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/test123/Lib/site-packages/django/core/handlers/base.py" />
+    <entry file="file://$USER_HOME$/test123/Lib/site-packages/django/core/handlers/wsgi.py" />
+    <entry file="file://$USER_HOME$/test123/Lib/site-packages/django/contrib/staticfiles/handlers.py" />
+    <entry file="file://C:/Python35/Lib/wsgiref/handlers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2527">
+          <caret line="136" column="0" lean-forward="false" selection-start-line="136" selection-start-column="0" selection-end-line="136" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/test123/Lib/site-packages/django/core/servers/basehttp.py" />
+    <entry file="file://C:/Python35/Lib/socketserver.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6650">
+          <caret line="353" column="0" lean-forward="false" selection-start-line="353" selection-start-column="0" selection-end-line="353" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/assets/css/basic.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="347">
+          <caret line="56" column="10" lean-forward="false" selection-start-line="56" selection-start-column="10" selection-end-line="56" selection-end-column="10" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/check.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="80" column="18" lean-forward="true" selection-start-line="80" selection-start-column="18" selection-end-line="80" selection-end-column="59" />
+        <state relative-caret-position="76">
+          <caret line="4" column="31" lean-forward="false" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/check-detail-homepage1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="969">
+          <caret line="51" column="87" lean-forward="false" selection-start-line="51" selection-start-column="87" selection-end-line="51" selection-end-column="87" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/check-detail-homepage2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="969">
+          <caret line="51" column="51" lean-forward="false" selection-start-line="51" selection-start-column="51" selection-end-line="51" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://DjangoModelDependency/#test123">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>DjangoModelDependency</ID>
+          <OriginalElement>#test123</OriginalElement>
+          <nodes>
+            <node x="" y="">xadmin.models.UserSettings</node>
+            <node x="" y="">check.models.Department2System</node>
+            <node x="" y="">check.models.SecurityDevice</node>
+            <node x="" y="">check.models.LocationDict</node>
+            <node x="" y="">check.models.NetworkDevice</node>
+            <node x="" y="">check.models.UserCheckSys</node>
+            <node x="" y="">check.models.UserCheckNet</node>
+            <node x="" y="">django.contrib.auth.models.Permission</node>
+            <node x="" y="">check.models.SystemInfo</node>
+            <node x="" y="">check.models.ResourceInfo</node>
+            <node x="" y="">check.models.UserCheckDev</node>
+            <node x="" y="">django.contrib.auth.models.Group</node>
+            <node x="" y="">django.contrib.contenttypes.models.ContentType</node>
+            <node x="" y="">users.models.UserProfile</node>
+            <node x="" y="">xadmin.models.UserWidget</node>
+            <node x="" y="">xadmin.models.Bookmark</node>
+            <node x="" y="">check.models.UserCheckSec</node>
+            <node x="" y="">check.models.UserCheckNetSys</node>
+            <node x="" y="">xadmin.models.Log</node>
+            <node x="" y="">users.models.Department</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="0.8859784283513097" x="639.0" y="332.0" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1311">
+          <caret line="9" column="51" lean-forward="false" selection-start-line="9" selection-start-column="51" selection-end-line="9" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/index_5.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-969">
+          <caret line="12" column="28" lean-forward="false" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/index_new.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="33" column="18" lean-forward="true" selection-start-line="33" selection-start-column="18" selection-end-line="33" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jilu">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/users/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="22" column="38" lean-forward="true" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/check/apps.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/check/adminx.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="92" column="51" lean-forward="true" selection-start-line="92" selection-start-column="51" selection-end-line="92" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/check/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#32#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/check/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/check/migrations/0002_auto_20180925_1509.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="27" column="10" lean-forward="true" selection-start-line="27" selection-start-column="10" selection-end-line="27" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/check/migrations/0003_userchecksec.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-228">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/check/migrations/0005_remove_userchecknetsys_net_id.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/check/migrations/0006_userchecksys_check_details.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/check/migrations/0001_initial.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="20" column="110" lean-forward="false" selection-start-line="20" selection-start-column="108" selection-end-line="20" selection-end-column="110" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test123/wsgi.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test123/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/check/migrations/0004_networkdevice_userchecknet_userchecknetsys.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="798">
+          <caret line="46" column="14" lean-forward="false" selection-start-line="46" selection-start-column="14" selection-end-line="46" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/check-detail-net.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2299">
+          <caret line="121" column="41" lean-forward="false" selection-start-line="121" selection-start-column="41" selection-end-line="121" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/checkNet.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2033">
+          <caret line="107" column="22" lean-forward="false" selection-start-line="107" selection-start-column="22" selection-end-line="107" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/check/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="30" column="23" lean-forward="false" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="23" />
+        <state relative-caret-position="371">
+          <caret line="596" column="43" lean-forward="false" selection-start-line="596" selection-start-column="43" selection-end-line="596" selection-end-column="43" />
           <folding>
-            <element signature="e#0#35#0" expanded="true" />
-            <marker date="1520986690173" expanded="true" signature="1753:2217" ph="select check... check_systeminfo" />
-            <marker date="1520986690173" expanded="true" signature="1997:2066" ph="select MAX(a... check_userchecksys" />
-            <marker date="1520986690173" expanded="true" signature="2254:2706" ph="select check... check_systeminfo" />
-            <marker date="1520986690173" expanded="true" signature="2741:3001" ph="select check... check_systeminfo" />
-            <marker date="1520986690173" expanded="true" signature="3037:3503" ph="select check... check_systeminfo" />
-            <marker date="1520986690173" expanded="true" signature="6383:6531" ph="select * fro... check_userchecksys" />
-            <marker date="1520986690173" expanded="true" signature="6436:6505" ph="select MAX(a... check_userchecksys" />
-            <marker date="1520986690173" expanded="true" signature="6876:7210" ph="select check... check_usercheckdev" />
-            <marker date="1520986690173" expanded="true" signature="7009:7073" ph="select MAX(a... check_usercheckdev" />
+            <marker date="1544101661506" expanded="true" signature="3693:4157" ph="select check... check_systeminfo" />
+            <marker date="1544101661506" expanded="true" signature="3937:4006" ph="select MAX(a... check_userchecksys" />
+            <marker date="1544101661506" expanded="true" signature="4194:4646" ph="select check... check_systeminfo" />
+            <marker date="1544101661506" expanded="true" signature="4681:4941" ph="select check... check_systeminfo" />
+            <marker date="1544101661506" expanded="true" signature="4977:5443" ph="select check... check_systeminfo" />
+            <marker date="1544101661506" expanded="true" signature="13592:13740" ph="select * fro... check_userchecksys" />
+            <marker date="1544101661506" expanded="true" signature="13645:13714" ph="select MAX(a... check_userchecksys" />
+            <marker date="1544101661506" expanded="true" signature="14327:14552" ph="select * fro... check_userchecksys" />
+            <marker date="1544101661506" expanded="true" signature="14385:14438" ph="select s_id check_department2system" />
+            <marker date="1544101661506" expanded="true" signature="14457:14526" ph="select MAX(a... check_userchecksys" />
+            <marker date="1544101661506" expanded="true" signature="15223:15448" ph="select * fro... check_userchecksys" />
+            <marker date="1544101661506" expanded="true" signature="15281:15334" ph="select s_id check_department2system" />
+            <marker date="1544101661506" expanded="true" signature="15353:15422" ph="select MAX(a... check_userchecksys" />
+            <marker date="1544101661506" expanded="true" signature="16126:16351" ph="select * fro... check_userchecksys" />
+            <marker date="1544101661506" expanded="true" signature="16184:16237" ph="select s_id check_department2system" />
+            <marker date="1544101661506" expanded="true" signature="16256:16325" ph="select MAX(a... check_userchecksys" />
+            <marker date="1544101661506" expanded="true" signature="16938:17282" ph="select check... check_usercheckdev" />
+            <marker date="1544101661506" expanded="true" signature="17071:17135" ph="select MAX(a... check_usercheckdev" />
+            <marker date="1544101661506" expanded="true" signature="17869:18313" ph="select check... check_usercheckdev" />
+            <marker date="1544101661506" expanded="true" signature="18002:18066" ph="select MAX(a... check_usercheckdev" />
+            <marker date="1544101661506" expanded="true" signature="18230:18283" ph="select s_id check_department2system" />
+            <marker date="1544101661506" expanded="true" signature="18900:19344" ph="select check... check_usercheckdev" />
+            <marker date="1544101661506" expanded="true" signature="19033:19097" ph="select MAX(a... check_usercheckdev" />
+            <marker date="1544101661506" expanded="true" signature="19261:19314" ph="select s_id check_department2system" />
+            <marker date="1544101661506" expanded="true" signature="19931:20375" ph="select check... check_usercheckdev" />
+            <marker date="1544101661506" expanded="true" signature="20064:20128" ph="select MAX(a... check_usercheckdev" />
+            <marker date="1544101661506" expanded="true" signature="20292:20345" ph="select s_id check_department2system" />
+            <marker date="1544101661506" expanded="true" signature="22388:22526" ph="select * fro... check_userchecksec" />
+            <marker date="1544101661506" expanded="true" signature="22441:22505" ph="select MAX(a... check_userchecksec" />
+            <marker date="1544101661506" expanded="true" signature="23045:23183" ph="select * fro... check_userchecknet" />
+            <marker date="1544101661506" expanded="true" signature="23098:23162" ph="select MAX(a... check_userchecknet" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/index.html">
+    <entry file="file://$PROJECT_DIR$/test123/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="22" column="13" lean-forward="true" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+        <state relative-caret-position="342">
+          <caret line="18" column="50" lean-forward="false" selection-start-line="18" selection-start-column="50" selection-end-line="18" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/check-detail-homepage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1140">
+          <caret line="60" column="0" lean-forward="false" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/check-detail-sec.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="16" column="17" lean-forward="false" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/check/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="24" column="15" lean-forward="false" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/extra_apps/xadmin/sites.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="9" lean-forward="false" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Python35/Lib/site-packages/future/__init__.py" />
+    <entry file="file://$PROJECT_DIR$/test123/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="135" column="59" lean-forward="true" selection-start-line="135" selection-start-column="59" selection-end-line="135" selection-end-column="59" />
           <folding />
         </state>
       </provider>
